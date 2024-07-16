@@ -35,13 +35,13 @@ public class User implements UserDetails {
     private Cart cart;
 
 
-    public User(String name, String surname, String username, String email, String password, Role role, String profilePic) {
+    public User(String name, String surname, String username, String email, String password) {
         this.name = name;
         this.surname = surname;
         this.username = username;
         this.email = email;
         this.password = password;
-        this.role = role;
+        this.role = Role.USER;
         this.profilePic = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png";
 
     }

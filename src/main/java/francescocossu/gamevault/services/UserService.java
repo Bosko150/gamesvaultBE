@@ -2,7 +2,9 @@ package francescocossu.gamevault.services;
 
 
 import francescocossu.gamevault.entities.User;
+import francescocossu.gamevault.exceptions.BadRequestException;
 import francescocossu.gamevault.exceptions.NotFoundException;
+import francescocossu.gamevault.payloads.UserDTO;
 import francescocossu.gamevault.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -17,10 +19,31 @@ public class UserService {
     PasswordEncoder bcrypt;
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private PasswordEncoder bCrypt;
 
 
     public User findById(UUID id) {
         return userRepository.findById(id).orElseThrow(() -> new NotFoundException(id));
+    }
+
+    public User saveUser(UserDTO userPayload) {
+        this.userRepository.findByEmail(userPayload.email()).ifPresent(utente -> {
+            throw new BadRequestException("The user with email: " + userPayload.email() + ", already exist.");
+        });
+        User user = new User(userPayload.name(), userPayload.surname(), userPayload.username(), userPayload.email(), bCrypt.encode(userPayload.password()));
+        return this.userRepository.save(user);
+    }
+
+    public User updateUser(UUID id, UserDTO userPayload) {
+        User user = this.findById(id);
+        user.setName(userPayload.name());
+        user.setSurname(userPayload.surname());
+        user.setUsername(userPayload.username());
+        user.setEmail(userPayload.email());
+        user.setPassword(bCrypt.encode(userPayload.password()));
+        return userRepository.save(user);
+
     }
 
 

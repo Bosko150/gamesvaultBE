@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -14,6 +15,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "games")
 public class Game {
     @Id
     @GeneratedValue
@@ -23,7 +25,8 @@ public class Game {
     private String shortVideoPath;
     private String description;
     @Enumerated(EnumType.STRING)
-    private Genre[] genres;
+    @ElementCollection(targetClass = Genre.class)
+    private List<Genre> genres;
     private String platform;
     private String developer;
     private String publisher;
@@ -32,9 +35,12 @@ public class Game {
     private double discountedPrice;
     private String percentageDiscount;
     private String aboutTheGame;
-    private String[] screenshots;
+    @ElementCollection
+    private List<String> screenshots;
     private String trailer;
-    private String[] systemRequirements;
-
+    @ElementCollection
+    private List<String> systemRequirements;
+    @ManyToMany(mappedBy = "games")
+    private List<Cart> carts;
 
 }

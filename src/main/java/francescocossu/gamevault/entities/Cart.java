@@ -16,6 +16,7 @@ import java.util.UUID;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "carts")
 public class Cart {
     @Id
     @GeneratedValue
@@ -23,7 +24,12 @@ public class Cart {
     @OneToOne
     @JsonBackReference
     private User user;
-    @OneToMany
+    @ManyToMany
+    @JoinTable(
+            name = "cart_game",
+            joinColumns = @JoinColumn(name = "cart_id"),
+            inverseJoinColumns = @JoinColumn(name = "game_id")
+    )
     private List<Game> games;
     private double totalPrice;
     private int totalGames;
