@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Getter
@@ -18,7 +19,7 @@ import java.util.List;
 public class Cart {
     @Id
     @GeneratedValue
-    private Long id;
+    private UUID id;
     @OneToOne
     @JsonBackReference
     private User user;

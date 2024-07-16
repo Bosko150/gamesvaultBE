@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.UUID;
+
 @Entity
 @Getter
 @Setter
@@ -15,7 +17,7 @@ import lombok.Setter;
 public class Game {
     @Id
     @GeneratedValue
-    private Long id;
+    private UUID id;
     private String title;
     private String backgroundImg;
     private String shortVideoPath;
