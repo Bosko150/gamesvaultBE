@@ -28,7 +28,7 @@ public class AuthController {
 
     @PostMapping("/register")
     @ResponseStatus(HttpStatus.CREATED)
-    public NewUserResponseDTO saveUtenti(@RequestBody @Validated UserDTO body, BindingResult validationResult) {
+    public NewUserResponseDTO createUser(@RequestBody @Validated UserDTO body, BindingResult validationResult) {
         if (validationResult.hasErrors()) {
             System.out.println(validationResult.getAllErrors());
             throw new BadRequestException(validationResult.getAllErrors());

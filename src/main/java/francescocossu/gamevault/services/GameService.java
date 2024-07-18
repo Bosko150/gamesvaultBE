@@ -1,6 +1,7 @@
 package francescocossu.gamevault.services;
 
 import francescocossu.gamevault.entities.Game;
+import francescocossu.gamevault.entities.Genre;
 import francescocossu.gamevault.exceptions.NotFoundException;
 import francescocossu.gamevault.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class GameService {
         if (!gameRepository.existsByTitle(game.getTitle())) {
             gameRepository.save(game);
         } else {
-            throw new IllegalArgumentException("Game already exists:" + game.getTitle());
+            System.out.println("Game already exists " + "-- " + game.getTitle().toUpperCase());
         }
 
     }
@@ -42,8 +43,8 @@ public class GameService {
         return gameRepository.findByTitle(title);
     }
 
-    public Optional<Game> findByGenre(String[] genres) {
-        return gameRepository.findByGenre(genres);
+    public List<Game> findGamesByGenres(List<Genre> genres) {
+        return gameRepository.findByGenresIn(genres);
     }
 
     public Optional<Game> findByDeveloper(String developer) {

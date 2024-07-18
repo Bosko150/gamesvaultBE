@@ -32,6 +32,11 @@ public class CartController {
 
     }
 
+    @PostMapping("/add/{cartId}/{gameId}")
+    public void addGameToCart(@PathVariable UUID cartId, @PathVariable UUID gameId) {
+        cartService.addGameToCart(cartId, gameId);
+    }
+
 }
 
 

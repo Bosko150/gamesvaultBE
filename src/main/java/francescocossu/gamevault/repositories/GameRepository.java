@@ -2,9 +2,11 @@ package francescocossu.gamevault.repositories;
 
 
 import francescocossu.gamevault.entities.Game;
+import francescocossu.gamevault.entities.Genre;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -14,7 +16,7 @@ public interface GameRepository extends JpaRepository<Game, UUID> {
 
     boolean existsByTitle(String title);
 
-    Optional<Game> findByGenre(String[] genres);
+    List<Game> findByGenresIn(List<Genre> genres);
 
     Optional<Game> findByDeveloper(String developer);
 

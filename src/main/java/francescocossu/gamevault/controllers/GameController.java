@@ -33,4 +33,6 @@ public class GameController {
     public Optional<Game> findByTitle(@PathVariable String title) {
         return gameService.findByTitle(title);
     }
+
+    
 }
