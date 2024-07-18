@@ -45,4 +45,12 @@ public class GameService {
     public Optional<Game> findByGenre(String[] genres) {
         return gameRepository.findByGenre(genres);
     }
+
+    public Optional<Game> findByDeveloper(String developer) {
+        return gameRepository.findByDeveloper(developer);
+    }
+
+    public Optional<Game> findByPublisher(String publisher) {
+        return gameRepository.findByPublisher(publisher);
+    }
 }

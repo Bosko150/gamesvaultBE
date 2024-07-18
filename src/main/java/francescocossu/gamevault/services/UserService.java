@@ -27,6 +27,10 @@ public class UserService {
         return userRepository.findById(id).orElseThrow(() -> new NotFoundException(id));
     }
 
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email).orElseThrow(() -> new NotFoundException(email));
+    }
+
     public User saveUser(UserDTO userPayload) {
         this.userRepository.findByEmail(userPayload.email()).ifPresent(utente -> {
             throw new BadRequestException("The user with email: " + userPayload.email() + ", already exist.");
@@ -35,15 +39,12 @@ public class UserService {
         return this.userRepository.save(user);
     }
 
-    public User updateUser(UUID id, UserDTO userPayload) {
-        User user = this.findById(id);
-        user.setName(userPayload.name());
-        user.setSurname(userPayload.surname());
-        user.setUsername(userPayload.username());
-        user.setEmail(userPayload.email());
-        user.setPassword(bCrypt.encode(userPayload.password()));
+    public User updateUser(User user) {
         return userRepository.save(user);
+    }
 
+    public User findByUsername(String username) {
+        return userRepository.findByUsername(username).orElseThrow(() -> new NotFoundException(username));
     }
 
 

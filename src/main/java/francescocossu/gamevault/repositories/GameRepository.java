@@ -16,4 +16,8 @@ public interface GameRepository extends JpaRepository<Game, UUID> {
 
     Optional<Game> findByGenre(String[] genres);
 
+    Optional<Game> findByDeveloper(String developer);
+
+    Optional<Game> findByPublisher(String publisher);
+
 }
