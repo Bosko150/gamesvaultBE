@@ -13,5 +13,6 @@ public enum Genre {
     SINGLEPLAYER,
     MULTIPLAYER,
     STRATEGY,
-    FPS
+    FPS,
+    SPORTS
 }

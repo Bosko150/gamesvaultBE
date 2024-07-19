@@ -1,6 +1,7 @@
 package francescocossu.gamevault.controllers;
 
 import francescocossu.gamevault.entities.Game;
+import francescocossu.gamevault.entities.Genre;
 import francescocossu.gamevault.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,5 +35,10 @@ public class GameController {
         return gameService.findByTitle(title);
     }
 
-    
+    @GetMapping("/genres")
+    public Genre[] getGenres() {
+        return Genre.values();
+    }
+
+
 }
