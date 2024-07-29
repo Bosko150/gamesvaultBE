@@ -266,7 +266,7 @@ public class GamesRunner implements ApplicationRunner {
         Game V_Rising = new Game();
         V_Rising.setTitle("V Rising");
         V_Rising.setBackgroundImg("https://gaming-cdn.com/img/products/11030/pcover/1920x620/11030.jpg?v=1715247025");
-        V_Rising.setGameImg("https://gaming-cdn.com/images/products/11030/380x218/v-rising-pc-game-steam-cover.jpg?v=1721390400");
+        V_Rising.setGameImg("https://gaming-cdn.com/images/products/11030/616x353/v-rising-pc-game-steam-cover.jpg?v=1721390400");
         V_Rising.setShortVideoPath("https://gaming-cdn.com/videos/products/11030/800x450/v-rising-pc-game-steam-preview.webm?v=1715249046");
         V_Rising.setFullPrice("35€");
         V_Rising.setDiscountedPrice(18.78);
@@ -300,7 +300,7 @@ public class GamesRunner implements ApplicationRunner {
         Game NBA_2k25 = new Game();
         NBA_2k25.setTitle("NBA 2k25");
         NBA_2k25.setBackgroundImg("https://gaming-cdn.com/img/products/17194/pcover/1920x620/17194.jpg?v=1721141445");
-        NBA_2k25.setGameImg("https://www.instant-gaming.com/images/products/17194/380x218/17194.jpg?v=1721141445");
+        NBA_2k25.setGameImg("https://www.instant-gaming.com/images/products/17194/616x353/17194.jpg?v=1721141445");
         NBA_2k25.setShortVideoPath("https://www.instant-gaming.com/videos/products/17194/800x450/nba-2k25-pc-game-steam-preview.webm?v=1721140822");
         NBA_2k25.setFullPrice("70€");
         NBA_2k25.setDiscountedPrice(51.39);
@@ -332,7 +332,7 @@ public class GamesRunner implements ApplicationRunner {
         Game FIFA_23 = new Game();
         FIFA_23.setTitle("FIFA 23");
         FIFA_23.setBackgroundImg("https://gaming-cdn.com/img/products/10545/pcover/1920x620/10545.jpg?v=1703155498");
-        FIFA_23.setGameImg("https://www.instant-gaming.com/images/products/10545/380x218/10545.jpg?v=1703155498");
+        FIFA_23.setGameImg("https://www.instant-gaming.com/images/products/10545/616x353/10545.jpg?v=1703155498");
         FIFA_23.setShortVideoPath("https://www.instant-gaming.com/videos/products/10545/800x450/fifa-23-pc-game-ea-app-preview.webm?v=1666702746");
         FIFA_23.setFullPrice("70€");
         FIFA_23.setDiscountedPrice(20.39);
@@ -437,7 +437,7 @@ public class GamesRunner implements ApplicationRunner {
         Monster_Hunter_World.setDiscountedPrice(10.72);
         Monster_Hunter_World.setPercentageDiscount("-64%");
         Monster_Hunter_World.setDescription("Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone or in co-op with up to three other players, and use materials collected from fallen foes to craft new gear and take on even bigger, badder beasts!");
-        Monster_Hunter_World.setReleaseDate(LocalDate.of(2024, 2, 8));
+        Monster_Hunter_World.setReleaseDate(LocalDate.of(2018, 1, 26));
         Monster_Hunter_World.setDeveloper("Capcom");
         Monster_Hunter_World.setPublisher("Capcom");
         Monster_Hunter_World.setPlatform("Steam");
@@ -464,8 +464,8 @@ public class GamesRunner implements ApplicationRunner {
         Game Alan_Wake = new Game();
         Alan_Wake.setTitle("Alan Wake");
         Alan_Wake.setBackgroundImg("https://gaming-cdn.com/img/products/11051/pcover/1920x620/11051.jpg?v=1697553204");
-        Alan_Wake.setGameImg("https://www.instant-gaming.com/images/products/11051/380x218/11051.jpg?v=1697553204");
-        Alan_Wake.setShortVideoPath("https://www.instant-gaming.com/videos/products/11051/800x450/alan-wake-pc-game-steam-preview.webm?v=1663601972");
+        Alan_Wake.setGameImg("https://www.instant-gaming.com/images/products/11051/616x353/11051.jpg?v=1697553204");
+        Alan_Wake.setShortVideoPath("https://gaming-cdn.com/videos/products/7493/800x450/alan-wake-2-pc-game-preview.webm?v=1698310922");
         Alan_Wake.setFullPrice("12€");
         Alan_Wake.setDiscountedPrice(2.04);
         Alan_Wake.setPercentageDiscount("-84%");
@@ -496,7 +496,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Alan_Wake_2 = new Game();
         Alan_Wake_2.setTitle("Alan Wake 2");
         Alan_Wake_2.setBackgroundImg("https://gaming-cdn.com/img/products/11051/pcover/1920x620/11051.jpg?v=1697553204");
-        Alan_Wake_2.setGameImg("https://gaming-cdn.com/images/products/7493/380x218/alan-wake-2-pc-game-cover.jpg?v=1701276070");
+        Alan_Wake_2.setGameImg("https://gaming-cdn.com/images/products/7493/616x353/alan-wake-2-pc-game-cover.jpg?v=1701276070");
         Alan_Wake_2.setShortVideoPath("https://gaming-cdn.com/videos/products/7493/800x450/alan-wake-2-pc-game-preview.webm?v=1698310922");
         Alan_Wake_2.setFullPrice("50€");
         Alan_Wake_2.setDiscountedPrice(39.99);
@@ -528,7 +528,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Sea_of_Thieves = new Game();
         Sea_of_Thieves.setTitle("Sea of Thieves 2024 Edition");
         Sea_of_Thieves.setBackgroundImg("https://gaming-cdn.com/img/products/967/pcover/1920x620/967.jpg?v=1718271152");
-        Sea_of_Thieves.setGameImg("https://www.instant-gaming.com/images/products/11555/380x218/11555.jpg?v=1716279083");
+        Sea_of_Thieves.setGameImg("https://www.instant-gaming.com/images/products/11555/616x353/11555.jpg?v=1716279083");
         Sea_of_Thieves.setShortVideoPath("https://www.instant-gaming.com/videos/products/11555/800x450/sea-of-thieves-2024-edition-pc-xbox-one-xbox-series-x-s-2023-edition-xbox-one-pc-xbox-series-x-s-game-microsoft-store-europe-preview.webm?v=1657031159");
         Sea_of_Thieves.setFullPrice("40€");
         Sea_of_Thieves.setDiscountedPrice(27.47);
@@ -559,8 +559,8 @@ public class GamesRunner implements ApplicationRunner {
 
         Game No_Mans_Sky = new Game();
         No_Mans_Sky.setTitle("No Man's Sky");
-        No_Mans_Sky.setBackgroundImg("");
-        No_Mans_Sky.setGameImg("https://www.instant-gaming.com/images/products/414/380x218/414.jpg?v=1721211784");
+        No_Mans_Sky.setBackgroundImg("https://gaming-cdn.com/img/products/414/pcover/1920x620/414.jpg?v=1721211784");
+        No_Mans_Sky.setGameImg("https://www.instant-gaming.com/images/products/414/616x353/414.jpg?v=1721211784");
         No_Mans_Sky.setShortVideoPath("https://www.instant-gaming.com/videos/products/414/800x450/no-man-s-sky-pc-mac-game-steam-preview.webm?v=1657027955");
         No_Mans_Sky.setFullPrice("50€");
         No_Mans_Sky.setDiscountedPrice(17.70);
@@ -592,7 +592,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Dead_Space = new Game();
         Dead_Space.setTitle("Dead Space");
         Dead_Space.setBackgroundImg("https://gaming-cdn.com/img/products/9094/pcover/1920x620/9094.jpg?v=1705415154");
-        Dead_Space.setGameImg("https://gaming-cdn.com/images/products/9094/380x218/dead-space-pc-game-ea-app-cover.jpg?v=1705415154");
+        Dead_Space.setGameImg("https://gaming-cdn.com/images/products/9094/616x353/dead-space-pc-game-ea-app-cover.jpg?v=1705415154");
         Dead_Space.setShortVideoPath("https://gaming-cdn.com/videos/products/9094/800x450/dead-space-pc-game-ea-app-preview.webm?v=1673528669");
         Dead_Space.setFullPrice("60€");
         Dead_Space.setDiscountedPrice(18.58);
@@ -627,7 +627,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Baldurs_Gate_3 = new Game();
         Baldurs_Gate_3.setTitle("Baldur's Gate 3");
         Baldurs_Gate_3.setBackgroundImg("https://gaming-cdn.com/img/products/4804/pcover/1920x620/4804.jpg?v=1710239606");
-        Baldurs_Gate_3.setGameImg("https://www.instant-gaming.com/images/products/4804/380x218/4804.jpg?v=1710239606");
+        Baldurs_Gate_3.setGameImg("https://www.instant-gaming.com/images/products/4804/616x353/4804.jpg?v=1710239606");
         Baldurs_Gate_3.setShortVideoPath("https://www.instant-gaming.com/videos/products/4804/800x450/baldur-s-gate-3-pc-game-gog-com-preview.webm?v=1677240334");
         Baldurs_Gate_3.setFullPrice("60€");
         Baldurs_Gate_3.setDiscountedPrice(53.39);
@@ -659,7 +659,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Minecraft = new Game();
         Minecraft.setTitle("Minecraft");
         Minecraft.setBackgroundImg("https://gaming-cdn.com/img/products/442/pcover/1920x620/442.jpg?v=1716387513");
-        Minecraft.setGameImg("https://gaming-cdn.com/images/products/442/380x218/minecraft-java-and-bedrock-edition-java-and-bedrock-edition-pc-game-cover.jpg?v=1716387513");
+        Minecraft.setGameImg("https://gaming-cdn.com/images/products/442/616x353/minecraft-java-and-bedrock-edition-java-and-bedrock-edition-pc-game-cover.jpg?v=1716387513");
         Minecraft.setShortVideoPath("https://gaming-cdn.com/videos/products/442/800x450/minecraft-java-and-bedrock-edition-java-and-bedrock-edition-pc-game-preview.webm?v=1657026831");
         Minecraft.setFullPrice("30€");
         Minecraft.setDiscountedPrice(12.58);
@@ -691,7 +691,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Terraria = new Game();
         Terraria.setTitle("Terraria");
         Terraria.setBackgroundImg("https://gaming-cdn.com/img/products/932/pcover/1920x620/932.jpg?v=1683791474");
-        Terraria.setGameImg("https://www.instant-gaming.com/images/products/932/380x218/932.jpg?v=1683791474");
+        Terraria.setGameImg("https://www.instant-gaming.com/images/products/932/616x353/932.jpg?v=1683791474");
         Terraria.setShortVideoPath("https://www.instant-gaming.com/videos/products/932/800x450/terraria-pc-mac-game-steam-preview.webm?v=1657041780");
         Terraria.setFullPrice("10€");
         Terraria.setDiscountedPrice(6.69);
@@ -725,7 +725,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Final_Fantasy_XIV = new Game();
         Final_Fantasy_XIV.setTitle("Final Fantasy XIV: Dawntrail");
         Final_Fantasy_XIV.setBackgroundImg("https://gaming-cdn.com/img/products/216/pcover/1920x620/216.jpg?v=1719952982");
-        Final_Fantasy_XIV.setGameImg("https://www.instant-gaming.com/images/products/16518/380x218/16518.jpg?v=1719997293");
+        Final_Fantasy_XIV.setGameImg("https://www.instant-gaming.com/images/products/16518/616x353/16518.jpg?v=1719997293");
         Final_Fantasy_XIV.setShortVideoPath("https://www.instant-gaming.com/videos/products/16518/800x450/final-fantasy-xiv-dawntrail-collector-s-edition-collector-s-edition-pc-game-europe-preview.webm?v=1711617536");
         Final_Fantasy_XIV.setFullPrice("50€");
         Final_Fantasy_XIV.setDiscountedPrice(38.49);
@@ -754,32 +754,30 @@ public class GamesRunner implements ApplicationRunner {
                 "Storage:100 GB available space"));
 
 
-        Game Red_Dead_Redemption_2 = new Game();
-        Red_Dead_Redemption_2.setTitle("Red Dead Redemption 2");
-        Red_Dead_Redemption_2.setBackgroundImg("https://gaming-cdn.com/img/products/5679/pcover/1920x620/5679.jpg?v=1713793245");
-        Red_Dead_Redemption_2.setGameImg("https://gaming-cdn.com/images/products/5679/380x218/red-dead-redemption-2-pc-game-rockstar-cover.jpg?v=1713793245");
-        Red_Dead_Redemption_2.setShortVideoPath("https://gaming-cdn.com/videos/products/5679/800x450/red-dead-redemption-2-pc-game-rockstar-preview.webm?v=1657034665");
-        Red_Dead_Redemption_2.setFullPrice("60€");
-        Red_Dead_Redemption_2.setDiscountedPrice(16.68);
-        Red_Dead_Redemption_2.setPercentageDiscount("-72%");
-        Red_Dead_Redemption_2.setDescription("Red Dead Redemption 2 for PC is an action adventure, open world game in which the player can roam freely with some elements playing out in third person, others in first person play modes. The player can commit crimes, but must then be prepared for law enforcement to hunt them down, ready to bring to bear the full weight of the law on the miscreant!");
-        Red_Dead_Redemption_2.setReleaseDate(LocalDate.of(2019, 12, 5));
-        Red_Dead_Redemption_2.setDeveloper("Rockstar Games");
-        Red_Dead_Redemption_2.setPublisher("Rockstar Games");
-        Red_Dead_Redemption_2.setPlatform("Steam");
-        Red_Dead_Redemption_2.setGenres(List.of(Genre.CRIME, Genre.SINGLEPLAYER, Genre.ADVENTURE));
-        Red_Dead_Redemption_2.setTrailer("https://www.youtube.com/embed/gmA6MrX81z4?si=6aI73f8pcoCjGroB");
-        Red_Dead_Redemption_2.setScreenshots(List.of("https://gaming-cdn.com/images/products/5679/screenshot/red-dead-redemption-2-pc-game-rockstar-wallpaper-1.jpg?v=1713793245",
-                "https://gaming-cdn.com/images/products/5679/screenshot/red-dead-redemption-2-pc-game-rockstar-wallpaper-2.jpg?v=1713793245",
-                "https://gaming-cdn.com/images/products/5679/screenshot/red-dead-redemption-2-pc-game-rockstar-wallpaper-3.jpg?v=1713793245",
-                "https://gaming-cdn.com/images/products/5679/screenshot/red-dead-redemption-2-pc-game-rockstar-wallpaper-4.jpg?v=1713793245",
-                "https://gaming-cdn.com/images/products/5679/screenshot/red-dead-redemption-2-pc-game-rockstar-wallpaper-5.jpg?v=1713793245")
+        Game Remnant_2 = new Game();
+        Remnant_2.setTitle("Remnant 2");
+        Remnant_2.setBackgroundImg("https://gaming-cdn.com/img/products/13288/pcover/1920x620/13288.jpg?v=1696579119");
+        Remnant_2.setGameImg("https://www.instant-gaming.com/images/products/13288/616x353/13288.jpg?v=1696579119");
+        Remnant_2.setShortVideoPath("https://www.instant-gaming.com/videos/products/13288/800x450/remnant-2-pc-game-steam-preview.webm?v=1681902180");
+        Remnant_2.setFullPrice("50€");
+        Remnant_2.setDiscountedPrice(17.45);
+        Remnant_2.setPercentageDiscount("-65%");
+        Remnant_2.setDescription("Remnant II is the sequel to the best-selling game Remnant: From the Ashes that pits survivors of humanity against new deadly creatures and god-like bosses across terrifying worlds. Play solo or co-op with two other friends to explore the depths of the unknown to stop an evil from destroying reality itself. To succeed, players will need to rely on their own skills and those of their team to overcome the toughest challenges and to stave off humanity’s extinction.");
+        Remnant_2.setReleaseDate(LocalDate.of(2023, 7, 25));
+        Remnant_2.setDeveloper("Gunfire Games");
+        Remnant_2.setPublisher("Gearbox Publishing");
+        Remnant_2.setPlatform("Steam");
+        Remnant_2.setGenres(List.of(Genre.RPG, Genre.FANTASY, Genre.ADVENTURE));
+        Remnant_2.setTrailer("https://www.youtube.com/embed/zU6_2QnhP3U?si=rFqv6jsMql_wqM_e");
+        Remnant_2.setScreenshots(List.of("https://gaming-cdn.com/images/products/13288/screenshot/remnant-2-pc-game-steam-wallpaper-1.jpg?v=1696579119",
+                "https://gaming-cdn.com/images/products/13288/screenshot/remnant-2-pc-game-steam-wallpaper-2.jpg?v=1696579119",
+                "https://gaming-cdn.com/images/products/13288/screenshot/remnant-2-pc-game-steam-wallpaper-3.jpg?v=1696579119",
+                "https://gaming-cdn.com/images/products/13288/screenshot/remnant-2-pc-game-steam-wallpaper-4.jpg?v=1696579119",
+                "https://gaming-cdn.com/images/products/13288/screenshot/remnant-2-pc-game-steam-wallpaper-5.jpg?v=1696579119")
 
         );
-        Red_Dead_Redemption_2.setAboutTheGame("RDR2, as the game is affectionately known, was released for other platforms before the PC release, and this saw the game gaining the title of best-selling game of all time, before the PC game figures were included. The reason for the game’s popularity is not hard to see.\n" +
-                "\n" +
-                "Unlike games where mayhem and destruction are key, this game allows you to sink into the beauty of the Wild West scenery, and to form empathic and sympathetic bonds with other players and NPCs (non-playing characters) in the moments between the action driven sequences – of which there are also many.");
-        Red_Dead_Redemption_2.setSystemRequirements(List.of("OS:Windows 10",
+        Remnant_2.setAboutTheGame("A mix of methodical and frenetic ranged/melee combat returns with cunning enemies and large scale boss battles. Choose specific gear and weapons to optimize for the different biomes and battles ahead. Bosses will bring high-level players to team up to overcome the challenge and try to obtain the biggest rewards. Players can travel alone or with friends as a team through strange new worlds and beyond, overrun by mythical creatures and deadly foes while trying to stay alive. There are multiple worlds to explore with different types of creatures, weapons, and items. Utilize and upgrade discovered items to take on tougher challenges");
+        Remnant_2.setSystemRequirements(List.of("OS:Windows 10",
                 "Processor:Intel Core i7-4790K or AMD Ryzen 5 1500X",
                 "Memory:8 GB RAM",
                 "Graphics:NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 470",
@@ -791,7 +789,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Lunacid = new Game();
         Lunacid.setTitle("Lunacid");
         Lunacid.setBackgroundImg("https://gaming-cdn.com/img/products/15344/pcover/1920x620/15344.jpg?v=1700473159");
-        Lunacid.setGameImg("https://www.instant-gaming.com/images/products/15344/380x218/15344.jpg?v=1700473159");
+        Lunacid.setGameImg("https://www.instant-gaming.com/images/products/15344/616x353/15344.jpg?v=1700473159");
         Lunacid.setShortVideoPath("https://www.instant-gaming.com/videos/products/15344/800x450/lunacid-pc-game-steam-preview.webm?v=1699624112");
         Lunacid.setFullPrice("14€");
         Lunacid.setDiscountedPrice(13.47);
@@ -822,7 +820,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Hollow_Knight = new Game();
         Hollow_Knight.setTitle("Hollow Knight");
         Hollow_Knight.setBackgroundImg("https://gaming-cdn.com/img/products/2198/pcover/1920x620/2198.jpg?v=1705490619");
-        Hollow_Knight.setGameImg("https://www.instant-gaming.com/images/products/2198/380x218/2198.jpg?v=1705490619");
+        Hollow_Knight.setGameImg("https://www.instant-gaming.com/images/products/2198/616x353/2198.jpg?v=1705490619");
         Hollow_Knight.setShortVideoPath("https://www.instant-gaming.com/videos/products/2198/800x450/hollow-knight-pc-mac-game-steam-preview.webm?v=1657036179");
         Hollow_Knight.setFullPrice("15€");
         Hollow_Knight.setDiscountedPrice(8.52);
@@ -858,7 +856,7 @@ public class GamesRunner implements ApplicationRunner {
         Game Stray = new Game();
         Stray.setTitle("Stray");
         Stray.setBackgroundImg("https://gaming-cdn.com/img/products/8260/pcover/1920x620/8260.jpg?v=1720773587");
-        Stray.setGameImg("https://www.instant-gaming.com/images/products/8260/380x218/8260.jpg?v=1720773587");
+        Stray.setGameImg("https://www.instant-gaming.com/images/products/8260/616x353/8260.jpg?v=1720773587");
         Stray.setShortVideoPath("https://www.instant-gaming.com/videos/products/8260/800x450/stray-pc-game-steam-europe-and-us-and-canada-preview.webm?v=1657103371");
         Stray.setFullPrice("20€");
         Stray.setDiscountedPrice(17.99);
@@ -911,7 +909,7 @@ public class GamesRunner implements ApplicationRunner {
         gameService.saveGame(Baldurs_Gate_3);
         gameService.saveGame(Minecraft);
         gameService.saveGame(Lunacid);
-        gameService.saveGame(Red_Dead_Redemption_2);
+        gameService.saveGame(Remnant_2);
         gameService.saveGame(Hollow_Knight);
         gameService.saveGame(Stray);
 
