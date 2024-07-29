@@ -54,4 +54,19 @@ public class GameService {
     public Optional<Game> findByPublisher(String publisher) {
         return gameRepository.findByPublisher(publisher);
     }
+
+    public List<Game> findByTitleContaining(String title) {
+        return gameRepository.findByTitleContainingIgnoreCase(title);
+    }
+
+    public List<Game> filterGames(String title, String genreString, String orderBy, Double minPrice, Double maxPrice) {
+        Genre genre = null;
+        if (genreString != null && !genreString.isEmpty()) {
+            try {
+                genre = Genre.valueOf(genreString.toUpperCase());
+            } catch (IllegalArgumentException e) {
+            }
+        }
+        return gameRepository.filterGames(title, genre, orderBy, minPrice, maxPrice);
+    }
 }

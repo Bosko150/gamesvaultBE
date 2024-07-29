@@ -59,7 +59,7 @@ public class GamesRunner implements ApplicationRunner {
                 "Additional Notes: Requires Steam account to activate"));
 
 
-        Game Ghost_of_Tsushima = new Game();
+        /*Game Ghost_of_Tsushima = new Game();
         Ghost_of_Tsushima.setTitle("Ghost of Tsushima");
         Ghost_of_Tsushima.setBackgroundImg("https://gaming-cdn.com/img/products/9093/pcover/9093.jpg?v=1715876608");
         Ghost_of_Tsushima.setGameImg("https://gaming-cdn.com/images/products/9093/616x353/ghost-of-tsushima-director-s-cut-pc-gioco-steam-cover.jpg?v=1715876608");
@@ -95,7 +95,7 @@ public class GamesRunner implements ApplicationRunner {
                 "DirectX: Version 11",
                 "Storage:75 GB available space",
                 "Sound Card: DirectX compatible sound card",
-                "Additional Notes:SSD Recommended"));
+                "Additional Notes:SSD Recommended"));*/
 
         Game God_of_War = new Game();
         God_of_War.setTitle("God of War");
@@ -892,7 +892,7 @@ public class GamesRunner implements ApplicationRunner {
         gameService.saveGame(Elden_Ring);
         gameService.saveGame(Terraria);
         gameService.saveGame(Final_Fantasy_XIV);
-        gameService.saveGame(Ghost_of_Tsushima);
+        /*gameService.saveGame(Ghost_of_Tsushima);*/
         gameService.saveGame(God_of_War);
         gameService.saveGame(Cyberpunk_2077);
         gameService.saveGame(The_Witcher_3);
