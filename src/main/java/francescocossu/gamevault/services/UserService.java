@@ -38,25 +38,18 @@ public class UserService {
 
     @Transactional
     public User saveUser(UserDTO userPayload) {
-        // Controlla se l'utente con lo stesso email esiste già
-        this.userRepository.findByEmail(userPayload.email()).ifPresent(utente -> {
-            throw new BadRequestException("The user with email: " + userPayload.email() + ", already exists.");
-        });
 
-        // Crea un nuovo oggetto User con i dati ricevuti
+        userRepository.findByEmail(userPayload.email()).ifPresent(utente -> {
+            throw new BadRequestException("The user with email: " + userPayload.email() + " already exists.");
+        });
+        
         User user = new User(userPayload.name(), userPayload.surname(), userPayload.username(), userPayload.email(), bCrypt.encode(userPayload.password()));
 
-        // Crea un nuovo carrello vuoto per l'utente
         Cart cart = new Cart();
-        cart.setUser(user); // Imposta l'utente nel carrello
-
-        // Associa il carrello all'utente
+        cart.setUser(user);
         user.setCart(cart);
 
-        // Salva il carrello nel repository
         cartRepository.save(cart);
-
-        // Salva l'utente nel repository
         return userRepository.save(user);
     }
 

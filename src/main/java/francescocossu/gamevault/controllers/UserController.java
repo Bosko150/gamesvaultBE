@@ -28,6 +28,11 @@ public class UserController {
         return userService.findByUsername(username);
     }
 
+    @GetMapping("/me")
+    public User getOwnProfile(@AuthenticationPrincipal User currentAuthenticatedUser) {
+        return userService.findById(currentAuthenticatedUser.getId());
+    }
+
     @PostMapping("/update")
     public User updateUser(@AuthenticationPrincipal User currentAuthenticatedUser, @RequestBody UserProfilePicDTO userProfilePicDTO) {
         User user = userService.findById(currentAuthenticatedUser.getId());

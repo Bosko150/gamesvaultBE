@@ -30,11 +30,16 @@ public class AuthController {
     @ResponseStatus(HttpStatus.CREATED)
     public NewUserResponseDTO createUser(@RequestBody @Validated UserDTO body, BindingResult validationResult) {
         if (validationResult.hasErrors()) {
-            System.out.println(validationResult.getAllErrors());
-            throw new BadRequestException(validationResult.getAllErrors());
+            StringBuilder errorMessage = new StringBuilder("Validation errors: ");
+            validationResult.getAllErrors().forEach(error -> errorMessage.append(error.getDefaultMessage()).append("; "));
+            throw new BadRequestException(errorMessage.toString());
         }
-        System.out.println(body);
-        return new NewUserResponseDTO(this.userService.saveUser(body).getId());
+
+        try {
+            return new NewUserResponseDTO(this.userService.saveUser(body).getId());
+        } catch (BadRequestException e) {
+            throw e;
+        }
     }
 
 }
