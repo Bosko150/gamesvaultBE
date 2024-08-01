@@ -1,5 +1,6 @@
 package francescocossu.gamevault.controllers;
 
+import francescocossu.gamevault.entities.Cart;
 import francescocossu.gamevault.entities.Game;
 import francescocossu.gamevault.services.CartService;
 import francescocossu.gamevault.services.GameService;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -22,6 +24,12 @@ public class CartController {
     public List<Game> getCartGames(@PathVariable UUID cartId) {
 
         return cartService.getCartGames(cartId);
+    }
+
+    @GetMapping("/user/{userId}")
+    public Optional<Cart> findCartByUserId(@PathVariable UUID userId) {
+
+        return cartService.findCartByUserId(userId);
     }
 
     @DeleteMapping("/delete/{cartId}/{gameId}")

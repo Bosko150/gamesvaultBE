@@ -42,7 +42,7 @@ public class User implements UserDetails {
         this.email = email;
         this.password = password;
         this.role = Role.USER;
-        this.profilePic = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png";
+        this.profilePic = "https://gaming-cdn.com/themes/igv2/images/avatar2.svg";
 
     }
 

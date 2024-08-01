@@ -39,6 +39,10 @@ public class CartService {
         return cartRepository.findById(id);
     }
 
+    public Optional<Cart> findCartByUserId(UUID userId) {
+        return cartRepository.findByUserId(userId);
+    }
+
     public void addGameToCart(UUID cartId, UUID gameId) {
         Cart cart = cartRepository.findById(cartId).orElseThrow(() -> new NotFoundException(cartId));
         cart.getGames().add(gameRepository.findById(gameId).orElseThrow(() -> new NotFoundException(gameId)));
