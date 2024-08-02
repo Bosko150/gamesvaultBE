@@ -36,7 +36,7 @@ public class Game {
     private String developer;
     private String publisher;
     private LocalDate releaseDate;
-    private String fullPrice;
+    private double fullPrice;
     private double discountedPrice;
     private String percentageDiscount;
     @Column(columnDefinition = "TEXT")

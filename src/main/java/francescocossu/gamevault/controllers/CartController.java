@@ -32,7 +32,7 @@ public class CartController {
         return cartService.findCartByUserId(userId);
     }
 
-    @DeleteMapping("/delete/{cartId}/{gameId}")
+    @PostMapping("/remove/{cartId}/{gameId}")
     public void deleteGameFromCart(@PathVariable UUID cartId, @PathVariable UUID gameId) {
 
 
